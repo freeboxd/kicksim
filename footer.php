@@ -21,7 +21,14 @@
 						KickSIM
 					</a>
 				</div>
-				<?php wp_nav_menu( array( 'theme_location' => 'main-menu', 'menu_class' => 'footer-main-menu' ) ); ?>
+				<div class="menu-main-menu-container">
+					<ul id="menu-main-menu" class="menu footer-main-menu" aria-expanded="false">
+						<li class="menu-item"><a href="http://localhost/wordpress/">Home</a></li>
+						<li class="menu-item"><a href="#o-que-e-o-kicksim">O que é o KickSIM</a></li>
+						<li class="menu-item"><a href="#como-usar">Como usar</a></li>
+						<li class="menu-item"><a href="http://localhost/wordpress/contato/">Contato</a></li>
+					</ul>
+				</div>
 			</div>
 		</footer>
 		<div class="sub-footer">
