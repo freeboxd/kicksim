@@ -16,7 +16,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link href="https://fonts.googleapis.com/css?family=Mada:300,400,500,900" rel="stylesheet">
-<!-- <script src="https://use.fontawesome.com/d28374772b.js"></script> -->
+<script src="https://use.fontawesome.com/d28374772b.js"></script>
 
 <?php wp_head(); ?>
 </head>
