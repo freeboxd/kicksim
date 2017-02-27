@@ -1,0 +1,184 @@
+//=========================================
+// ** header-content **
+//=========================================
+	
+.header-main
+	margin-top 50px
+	&--content
+		display flex
+	&--left
+		flex 1
+		padding-top 90px
+	&--right
+		text-align right
+	&--lead
+		color white
+		font-size 3.2em
+		margin 0
+	&--text
+		color #cdcdcd
+		font-size 1.32em
+		font-weight lighter
+		line-height 40px
+		margin-top 0
+		width 85%
+	+below(760px)
+		&--content
+			flex-direction column
+			padding 0
+		&--left
+			padding 30px
+		&--right
+			background $normal-blue
+			width 100%
+			height 100%
+			text-align center
+			min-height 300px
+			overflow hidden
+			padding 50px 0
+		
+.right-cut
+	background $normal-blue
+	position absolute
+	right 0
+	top 0
+	width 20%
+	height 100%
+	&::after
+		content ''
+		background $normal-blue
+		position absolute
+		width 100%
+		height 100%
+		top 0
+		bottom 0
+		right 0
+		transform skew(-13deg) translate(-120px)
+		z-index 1
+		+below(1000px)
+			transform skew(-10deg) translate(-120px)
+		+below(960px)
+			transform skew(-10deg) translate(-90px)
+	+below(760px)
+		display none
+
+.smartphone-showcase-image
+	max-width 235px
+	width auto
+	height auto
+
+.download-icons
+	position relative
+	padding 20px 0 50px
+	a
+		text-decoration none
+
+.single-download-icon
+	max-width 150px
+	height auto
+	margin-left 10px
+	&:hover
+		opacity .9
+		
+
+//=========================================
+// ** main-content > general **
+//=========================================
+
+.content-section
+	padding 40px
+
+.section-lead
+	font-weight lighter
+	font-size 1.55em
+	text-align center
+
+.section-container
+	padding 25px 0
+	
+//=========================================
+// ** o que é o kicksim **
+//=========================================
+
+.steps-row
+	display flex
+	margin-bottom 50px
+
+.app-steps-left-col,
+.app-steps-right-col
+	flex 1
+	+above(760px)
+		&:first-child
+			border-right solid 1px #ccc
+
+.app-steps-left-col
+	text-align left
+	.app-steps-text
+		margin-right 30px
+		text-align right
+	
+.app-steps-right-col
+	text-align right
+	.app-steps-text
+		margin-left 30px
+		text-align left
+
++below(760px)
+	.steps-row
+		flex-direction column
+		
++below(990px)
+	.app-steps-left-col,
+	.app-steps-right-col
+		text-align center
+		.app-steps-text
+			text-align center
+
+
+//=========================================
+// ** como usar **
+//=========================================
+
+.how-to-section
+	background $normal-blue
+	color white
+
+.btn-header
+	background white
+	font-size .9em
+	color $secondary-blue
+
+.how-to-steps
+	padding 50px
+	text-align center
+	display flex
+	justify-content space-between
+	+below(990px)
+		flex-direction column
+
+.how-to-step
+	flex 1
+	margin 20px 0
+	text-align center
+	opacity .85
+	transition 150ms linear
+	&:hover
+		opacity 1
+	+below(990px)
+		opacity 1
+
+.how-to-steps-img
+	display block
+	margin 0 auto
+	margin-bottom 20px
+
+.how-to-step-title
+	font-size 1.1em
+	text-transform uppercase
+
+.how-to-step-text
+	margin 0
+	a
+		color white
+		&:hover
+			color #4169e1

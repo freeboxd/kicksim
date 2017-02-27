@@ -1,0 +1,65 @@
+.site-footer
+	padding 40px 0
+	background $dark-blue
+	&--container	
+		display flex
+		align-items center
+		+below(760px)
+			flex-direction column
+			
+.company
+	flex 1
+
+.footer-home-anchor
+	color $secondary-blue
+	text-decoration none
+	&:hover
+		color $secondary-blue
+		opacity .9
+	&:visited
+		color $secondary-blue
+
+.menu-main-menu-container
+	flex 1
+	text-align right
+
+.footer-main-menu,
+.footer-sub-menu
+	margin 0
+	padding 0
+	.menu-item
+		display inline-block
+		a
+			font-size 0.8em
+			text-decoration none
+			color white
+			&:hover
+				text-decoration underline
+		
+
+.footer-main-menu
+	.menu-item:not(:first-child)
+		margin-left 40px
+				
+.sub-footer
+	background black
+	padding 12px 0
+	&--container
+		display flex
+		align-items center
+		+below(760px)
+			flex-direction column
+
+.footer-sub-menu
+	.menu-item
+		a
+			color #ccc
+	.menu-item:not(:last-child)
+		margin-right 40px
+
+.site-info
+	flex 1
+	text-align right
+	font-size .8em
+	+below(760px)
+		text-align center

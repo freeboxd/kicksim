@@ -1,0 +1,108 @@
+//=========================================
+// ** general **
+//=========================================
+
+.container
+	position relative
+	z-index 999
+
+.site-header
+	&--content
+		display block
+		top 0
+		width 100%
+		left 0
+		height 100%
+		position relative
+		min-height 720px
+		.top-bar
+			padding-top 20px
+	&:not(.home) .site-header--content .top-bar
+			background $dark-blue
+			padding-bottom 20px
+	&.home
+		background-image url('images/home/header-bg.jpg')
+		background-repeat no-repeat
+		background-size cover
+		background-position center
+		.site-header--content
+			background-color rgba(0,0,0,.55)
+		.site-header--content .top-bar
+			padding-top 40px
+
+//=========================================
+// ** top-bar **
+//=========================================
+
+.top-bar--container
+	display flex
+	align-items flex-end
+	
+.logo img:hover
+	transition 150ms linear
+	opacity 0.9
+	flex .2
+
+.main-navigation
+	flex 1
+	li
+		margin-left 55px
+	a
+		color white
+		&:hover
+			text-decoration underline
+
+.menu-toggle
+	border-radius 0
+	border 0
+	cursor pointer
+	margin 1.3rem 0 0
+	padding 0
+	width 54px
+	height 54px
+	position relative
+	&__bars,
+	&__bars:before,
+	&__bars:after
+		border-radius 5px
+		display block
+		width 38px
+		height 6px
+		position relative
+		margin 0 auto
+	&__bars:before,
+	&__bars:after
+		content ''
+		position absolute
+		margin 0 auto
+	&__bars:before
+		transform translate3d(0,-11px,0)
+	&__bars:after
+		transform translate3d(0,11px,0)
+
+.menu-toggle
+	background white
+	.menu-toggle__bars,
+	.menu-toggle__bars:before,
+	.menu-toggle__bars:after
+		background black
+
+.menu-toggle
+	flex 1
+	float right
+		
+.social-media
+	flex .2
+	a
+		text-decoration none
+		&:hover
+			opacity .9
+		.fa
+			color white !important
+			font-size 1.3em
+			margin-left 5px
+	+below(960px)
+		display none
+
+.follow-us
+	color white
